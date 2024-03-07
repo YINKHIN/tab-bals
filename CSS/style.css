@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Battambang:wght@400;700&family=Jost:ital,wght@0,100..900;1,100..900&family=Kantumruy+Pro:wght@600&family=Koulen&family=Noto+Sans+Khmer:wght@100..900&family=Noto+Serif+Khmer:wght@100..900&family=Odor+Mean+Chey&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,200;0,400;0,500;0,600;1,800&family=Suwannaphum:wght@700&display=swap');
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ font-family: "Kantumruy Pro", sans-serif;
+}
+body{
+ background-color: rgb(48, 31, 0);
+}
+#tab-main{
+ display: flex;
+ justify-content: center;
+ background: rgb(95 , 94 ,94) ;
+}
+#tab-main #tab-header{
+ display: flex;
+ gap: 4rem;
+ justify-content: space-between;
+ padding: 20px;
+ cursor: pointer;
+ font-size: 20px;
+ color: rgb(255, 255, 255);
+}
+
+#tab-header>#btn-html{
+ padding: 10px 20px;
+ border-radius: 10px;
+}
+#tab-header>#btn-css{
+ padding: 10px 20px;
+ border-radius: 10px;
+}
+#tab-header>#btn-js{
+ padding: 10px 20px;
+ border-radius: 10px;
+ 
+}
+#tab-body{
+ text-align: center;
+ padding: 10px 100px;
+}
+#body-html>p,
+#body-css>p,
+#body-js>p{
+ margin: 20px;
+ color: aliceblue;
+ font-family: "jost";
+ font-size: xx-large;
+ position: absolute;
+}
+#body-js,
+#body-css
+{
+ display: none;
+}
+#tab-header p:hover{
+  color: red;
+}
+#body-js p{
+ color: black;
+ font-family: "jost";
+}
+#body-html{
+ display: none;
+}
+#body-none{
+ color: rgb(255, 255, 255);
+ text-align: center;
+ font-size: xx-large;
+ display: block;
+
+}
+
+/*Extra large devices (large desktops, 1200px and up)*/
+
+
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+  #tab-main{
+    display: flex;
+    justify-content: center;
+    background: rgb(95 , 94 ,94) ;
+
+  
+  }
+  #tab-main #tab-header{
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+   }
+   #body-html img,
+   #body-css img,
+   #body-js img{
+     width:130%;
+     align-items: center;
+     justify-content: center;
+     display: flex;
+
+   }
+   #body-html>p,
+   #body-css>p,
+   #body-js>p{
+    font-size: 25px;
+
+   }
+}
